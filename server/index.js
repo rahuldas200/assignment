@@ -8,7 +8,7 @@ const port = process.env.PORT || 4000
 mongoose.connect();
 
 const corsOptions = {
-    origin: 'http://localhost:3000', // only allow requests from this origin
+    origin: 'https://scalenow-client.vercel.app', // only allow requests from this origin
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     allowedHeaders: 'Content-Type,Authorization',
     exposedHeaders: 'Content-Range,X-Content-Range',
