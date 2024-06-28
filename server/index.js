@@ -7,14 +7,12 @@ const app = express();
 const port = process.env.PORT || 4000
 mongoose.connect();
 
-const corsOptions = {
-    origin: 'https://scalenow-client.vercel.app', // only allow requests from this origin
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    allowedHeaders: 'Content-Type,Authorization',
-    exposedHeaders: 'Content-Range,X-Content-Range',
-    credentials: true // enable set cookie
-};
-app.use(cors(corsOptions));
+app.use(
+	cors({
+		origin: "*",
+		credentials: true,
+	})
+);
 
 app.use(express.json())
 
