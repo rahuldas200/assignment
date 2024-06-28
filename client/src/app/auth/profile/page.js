@@ -38,7 +38,7 @@ export default function Profile() {
         };
 
         fetchUserData();
-    }, []);
+    }, [router]);
 
     if (!userData) {
         return <div>Loading...</div>;
