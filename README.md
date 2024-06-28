@@ -29,22 +29,22 @@ Ensure you have the following installed on your local machine:
 
 *Clone the repository*
 
-   git clone https://github.com/rahuldas200/assignment.git
-   cd assignment
+  - git clone https://github.com/rahuldas200/assignment.git
+  - cd assignment
 
 ### Install client dependencies
-cd client
-npm install
+- cd client
+- npm install
 
 
 # Install server dependencies
-cd ../server
-npm install
+- cd ../server
+- npm install
 
 ### Server (.env):
 
-PORT=4000
-JWT_SECRET=your_jwt_secret
+- PORT=4000
+- JWT_SECRET=your_jwt_secret
 DB_CONNECTION_STRING=your_database_connection_string
 
 
