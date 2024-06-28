@@ -22,7 +22,7 @@ export default function Register() {
             toast.error("password and confirm password are not matched")
         }
         try {
-            const res = await axios.post('http://localhost:4000/api/v1/auth/registration', data);
+            const res = await axios.post('https://scalenow-client.vercel.app/api/v1/auth/registration', data);
 
             if (res.data.success === true) {
                 toast.success(res.data.message);

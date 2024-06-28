@@ -17,7 +17,7 @@ export default function Login() {
     const onSubmit = async (data) => {
         console.log(data)
         try {
-            const res = await axios.post('http://localhost:4000/api/v1/auth/login', data);
+            const res = await axios.post('https://scalenow-client.vercel.app/api/v1/auth/login', data);
             console.log(res.data)
             if (res.data.success === true) {
                 localStorage.setItem('token', res.data.token);

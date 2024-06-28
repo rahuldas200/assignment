@@ -20,7 +20,7 @@ export default function Profile() {
             }
 
             try {
-                const res = await axios.get('http://localhost:4000/api/v1/auth/user-details', {
+                const res = await axios.get('https://scalenow-client.vercel.app/api/v1/auth/user-details', {
                     headers: {
                         'Authorization': token,
                     },
