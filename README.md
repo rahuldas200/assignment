@@ -45,7 +45,7 @@ Ensure you have the following installed on your local machine:
 
 - PORT=4000
 - JWT_SECRET=your_jwt_secret
-DB_CONNECTION_STRING=your_database_connection_string
+- DB_CONNECTION_STRING=your_database_connection_string
 
 
 ### Start client 
