@@ -7,6 +7,11 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended"
@@ -15,6 +20,8 @@
     "react"
   ],
   "rules": {
-    "react/no-unescaped-entities": "off"
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": "warn"
   }
 }
